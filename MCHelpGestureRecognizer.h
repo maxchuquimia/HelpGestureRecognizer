@@ -11,7 +11,6 @@
 {
     NSMutableArray *curvePoints;
     BOOL listenForPoint;
-    NSTimer *timer;
 }
 
 @end
