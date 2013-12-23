@@ -1,7 +1,7 @@
 # MCHelpGestureRecognizer
 ### A simple way to add help functionality into your app without the need for a button
 
-![Example Gif](http://i.imgflip.com/5mww7.gif)
+![Example Gif](http://i.imgur.com/N2pFAGv.gif)
 
 To use, simply import `MCHelpGestureRecognizer.h` and `MCHelpGestureRecognizer.m` into your project (like any other `UIGestureRecognizer`).
 
@@ -23,3 +23,5 @@ And then add a callback method:
 
 
 Simples!
+
+Oh, and yes, it's MIT licensed. Go wild!
