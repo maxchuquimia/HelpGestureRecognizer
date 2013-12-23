@@ -3,7 +3,6 @@
 //  HelpGestureRecognizer
 //
 //  Created by Max Chuquimia on 22/12/13.
-//  Copyright (c) 2013 Max Chuquimia. All rights reserved.
 //
 
 #import "MCViewController.h"
@@ -17,13 +16,29 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	helpRecognizer = [[MCHelpGestureRecognizer alloc] initWithTarget:self
+                                                              action:@selector(showHelp)];
+    [helpRecognizer setDelegate:self];
+    [self.view addGestureRecognizer:helpRecognizer];
+    
+    [detectionLabel setAlpha:0.0f];
+}
+
+-(void)showHelp
+{
+    UIColor *c = [UIColor colorWithRed:((float)(arc4random() % 255))/255.0f green:((float)(arc4random() % 255))/255.0f blue:((float)(arc4random() % 255))/255.0f alpha:1.0f];
+    [self.view setBackgroundColor:c];
+    
+    NSLog(@"HELP ME!");
+    
+    [detectionLabel setAlpha:1.0f];
+    
+    [UIView animateWithDuration:1.0f animations:^{[detectionLabel setAlpha:0.0f];}];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

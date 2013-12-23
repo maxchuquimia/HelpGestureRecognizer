@@ -22,6 +22,7 @@
 		507A7B09186670A50057771F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 507A7AE8186670A40057771F /* UIKit.framework */; };
 		507A7B11186670A50057771F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 507A7B0F186670A50057771F /* InfoPlist.strings */; };
 		507A7B13186670A50057771F /* HelpGestureRecognizerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 507A7B12186670A50057771F /* HelpGestureRecognizerTests.m */; };
+		507A7B1E186670FB0057771F /* MCHelpGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 507A7B1D186670FB0057771F /* MCHelpGestureRecognizer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		507A7B0E186670A50057771F /* HelpGestureRecognizerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelpGestureRecognizerTests-Info.plist"; sourceTree = "<group>"; };
 		507A7B10186670A50057771F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		507A7B12186670A50057771F /* HelpGestureRecognizerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelpGestureRecognizerTests.m; sourceTree = "<group>"; };
+		507A7B1C186670FB0057771F /* MCHelpGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCHelpGestureRecognizer.h; path = ../MCHelpGestureRecognizer.h; sourceTree = "<group>"; };
+		507A7B1D186670FB0057771F /* MCHelpGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCHelpGestureRecognizer.m; path = ../MCHelpGestureRecognizer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,8 @@
 		507A7AEA186670A40057771F /* HelpGestureRecognizer */ = {
 			isa = PBXGroup;
 			children = (
+				507A7B1C186670FB0057771F /* MCHelpGestureRecognizer.h */,
+				507A7B1D186670FB0057771F /* MCHelpGestureRecognizer.m */,
 				507A7AF3186670A50057771F /* MCAppDelegate.h */,
 				507A7AF4186670A50057771F /* MCAppDelegate.m */,
 				507A7AF6186670A50057771F /* Main_iPhone.storyboard */,
@@ -254,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				507A7B1E186670FB0057771F /* MCHelpGestureRecognizer.m in Sources */,
 				507A7AF5186670A50057771F /* MCAppDelegate.m in Sources */,
 				507A7AFE186670A50057771F /* MCViewController.m in Sources */,
 				507A7AF1186670A40057771F /* main.m in Sources */,
@@ -475,6 +481,7 @@
 				507A7B18186670A50057771F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		507A7B19186670A50057771F /* Build configuration list for PBXNativeTarget "HelpGestureRecognizerTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +490,7 @@
 				507A7B1B186670A50057771F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
