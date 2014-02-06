@@ -21,6 +21,17 @@ And then add a callback method:
 }
 ```
 
+Also, implement this delegate method to allow interaction with other UI Objects:
+
+```objective-c
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
+    if ([touch.view isKindOfClass:[UIControl class]]) {
+        return NO;
+    }
+    return YES;
+}
+```
+
 
 Simples!
 
